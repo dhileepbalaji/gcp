@@ -122,7 +122,7 @@ resource "google_container_cluster" "primary" {
   }
 
   depends_on = [
-    google_compute_router_nat.nat,
+    google_compute_router_nat.nat,google_kms_crypto_key_iam_member.kubernetes-secrets-gke
   ]
 }
 

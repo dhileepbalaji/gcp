@@ -26,6 +26,8 @@ resource "google_container_node_pool" "common" {
     create = "30m"
     update = "20m"
   }
-
+  depends_on = [
+    google_compute_router_nat.nat,google_kms_crypto_key_iam_member.kubernetes-secrets-gke
+  ]
 }
 
