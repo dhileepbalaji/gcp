@@ -18,15 +18,6 @@ module "k8s_public_ipaddress" {
   ]
 }
 
-module "tls" {
-  source            = "./modules/tls"
-  hostname          = "*.vault.cluster.local"
-  ip_addresses      = "127.0.0.1"
-  organization_name = "example company"
-  common_name       = "vault"
-  country           = "US"
-}
-
 module "vault_kms" {
   source           = "./modules/gcp-kms"
   project_id       = var.project_id
