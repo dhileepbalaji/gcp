@@ -1,0 +1,18 @@
+apiVersion: v1
+entries:
+  vault:
+  - apiVersion: v2
+    created: "2020-05-04T13:37:40.647140099Z"
+    description: Install and configure Vault on Kubernetes.
+    digest: c0bdce96501861ee019aa54569d51bf85f90fc5d83a8b765065e0b483c79b16d
+    home: https://www.vaultproject.io
+    icon: https://github.com/hashicorp/vault/raw/f22d202cde2018f9455dec755118a9b84586e082/Vault_PrimaryLogo_Black.png
+    name: vault
+    sources:
+    - https://github.com/hashicorp/vault
+    - https://github.com/hashicorp/vault-helm
+    - https://github.com/hashicorp/vault-k8s
+    urls:
+    - charts/vault-agent-injector.tgz
+    version: 0.5.0
+generated: "2020-05-04T13:37:40.639387235Z"

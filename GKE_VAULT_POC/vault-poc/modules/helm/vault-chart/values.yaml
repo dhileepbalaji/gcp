@@ -1,0 +1,13 @@
+vault:
+  instances: 3
+  nodeSelectors:
+    environment: common
+vault-secrets-webhook:
+  replicaCount: 3
+  nodeSelector:
+    environment: common
+vault-operator:
+  nodeSelector:
+    environment: common 
+ingress:
+  enabled: false
